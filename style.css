@@ -1,0 +1,301 @@
+body{
+  margin: auto;
+  padding: 3px;
+  min-width: 300px;
+  background: radial-gradient(ellipse at bottom, #013155 20%, #01162E 100%);
+}
+
+/* Font */
+p, header, label, li{
+  font-family: 'Montserrat', sans-serif;
+  color: #14ceca;
+}
+
+#logo{
+  font-family: 'Alex Brush', cursive;
+  color: white;
+}
+
+/* navbar */
+nav,footer{
+  background-color: #01162d !important;
+}
+
+.section{
+  color: #e6f1ff;
+}
+
+/* all links */
+.link{
+  color: #FF5D73
+}
+
+/* all links */
+.link:hover{
+  color: rgba(255, 99, 72, 0.65);
+}
+
+/* Resume Box */
+.box{
+  padding: 2px;
+}
+
+.Button{
+  height: 50px;
+  width: 150px;
+  border-radius: 5%;
+}
+
+
+.first-section img{
+  margin-bottom: 500px;
+}
+
+@media(min-width: 768px){
+  .first-section img{
+    margin-bottom: 20px;
+  }
+}
+
+@media(min-width: 992px){
+  .first-section img{
+    margin-bottom: 10px;
+  }
+}
+
+
+.img-fluid{
+  width: 500px;
+  height: 400px;
+  padding: 30px;
+  align-items: center;
+  opacity: .7;
+}
+
+.img-fluid:hover{
+  opacity: 1;
+}
+.section {
+  padding: 60px 0 50px;
+}
+
+@media(min-width: 100px){
+  .section:not(#contact) {
+    padding: 100px 0;
+  }
+}
+
+#intro, #about_me, #experience{
+  min-height: 100vh;
+  padding: 100px 0;
+  margin: auto;
+  align-items: center;
+}
+#experience{
+  min-height: 75vh!important;
+}
+
+.my-contacts{
+  min-height: 75vh;
+  padding-top: 100px;
+  margin: auto;
+  align-items: center;
+}
+
+hr.gradient{
+  background: transparent;
+  background-image: linear-gradient(to right,#fff,#fff);
+  height: 1px;
+}
+
+
+/* Style the exp */
+.exp {
+  overflow: hidden;
+  border: 2px solid black;
+  background-color: #545b62;
+}
+
+/* Style the buttons inside the exp */
+.exp button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+/* Change background color of buttons on hover */
+.exp button:hover {
+  background-color: #ddd;
+  text-decoration: underline;
+}
+
+.exp button.active {
+  background-color: #ccc;
+}
+
+/* Style the exp content */
+.description {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid black;
+  border-top: none;
+}
+
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+.description>p{
+  padding: 1px;
+  font-weight: bold;
+}
+.description>ul>li{
+  padding: 3px;
+}
+
+
+/* SOCIAL MEDIA */
+.middle{
+  margin: 30px;
+  padding: 30px
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.social{
+  display: inline-block;
+  width: 220px;
+  height: 90px;
+  background:rgba(103, 116, 142, 0.88);
+  margin: 10px;
+  border-radius: 5%;
+  box-shadow: 0 5px 15px -5px black;
+  color: #fff;
+  cursor: pointer;
+  font-family:"Montserrat",sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+.social i{
+  line-height: 90px;
+  font-size: 30px;
+  transition: 0.2s linear;
+}
+.social:hover i{
+  transform: scale(2.0);
+  color: #f1f1f1;
+}
+
+.social::before{
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  right: -120%;
+  bottom: 90%;
+}
+.social:hover::before{
+  animation: animate 0.7s 1;
+  bottom: -10%;
+  right: -20%;
+}
+@keyframes animate {
+  0%{
+    right: -110%;
+    bottom: 50%;
+  }50%{
+    right: 10%;
+    bottom:-90%;
+  }100%{
+    bottom: -10%;
+    right: -20%;
+  }
+}
+
+.widgets{
+  padding: 10px;
+  margin: 10px;
+}
+
+footer{
+  color: #ffffffbf;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bookmark:link:hover{
+  text-decoration:underline;
+  font-size: 20px;
+}
+
+
+/* make a scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* track scrollbar */
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+/* clicking on scrollbar*/
+::-webkit-scrollbar-thumb {
+  background: #0c827f;
+}
+/*hover on scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: #14ceca;
+}
+
+
+/*snowing down*/
+#scroll-up{
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 25px;
+  z-index: 99;
+  color: #007bff;
+  font-size: 17px;
+}
+#scroll-up:hover{
+  opacity: .8;
+}
+/*
+stars move
+.star{
+  position:fixed;
+  background: white;
+  border-radius: 50px;
+  animation: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: -1;
+}
+.type-1{
+  width: 1px;
+  height: 1px;
+}
+.type-2{
+  width: 2px;
+  height: 2px;
+}
+.type-3{
+  width: 3px;
+  height: 3px;
+}
+@keyframes move {
+  0%{transform: translateY(0px);}
+  100%{transform: translateY(100px);}
+} */
