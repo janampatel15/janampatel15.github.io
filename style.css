@@ -1,12 +1,12 @@
 html{
   scroll-behavior: smooth;
 }
-
 body{
   margin: auto;
   padding: 3px;
   min-width: 300px;
   background: radial-gradient(ellipse at bottom, #013155 20%, #01162E 100%);
+  overflow-x: hidden;
 }
 
 /* Font */
@@ -24,6 +24,7 @@ p, header, label, li{
 nav,footer{
   background-color: #01162d !important;
 }
+
 
 .section{
   color: #e6f1ff;
@@ -67,7 +68,6 @@ nav,footer{
   }
 }
 
-
 .img-fluid{
   width: 500px;
   height: 400px;
@@ -76,11 +76,15 @@ nav,footer{
   opacity: .7;
 }
 
+#col2{
+  max-height: 800px;
+}
+
 .img-fluid:hover{
   opacity: 1;
 }
 .section {
-  padding: 60px 0 50px;
+  /* padding: 60px 0 50px; */
 }
 
 @media(min-width: 100px){
@@ -89,16 +93,16 @@ nav,footer{
   }
 }
 
-#intro, #about_me, #experience{
+#intro, #about_me,#experience{
   min-height: 100vh;
   padding: 100px 0;
   margin: auto;
   align-items: center;
 }
-#experience{
-  min-height: 75vh!important;
-}
 
+.description>h3,li,p{
+  padding: 3px;
+}
 .my-contacts{
   min-height: 75vh;
   padding-top: 100px;
@@ -151,11 +155,6 @@ hr.gradient{
   border-top: none;
 }
 
-/* .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
 
 .description>p{
   padding: 1px;
@@ -214,6 +213,7 @@ hr.gradient{
   bottom: -10%;
   right: -20%;
 }
+
 @keyframes animate {
   0%{
     right: -110%;
@@ -244,26 +244,21 @@ footer{
   font-size: 20px;
 }
 
-
-/* make a scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-/* track scrollbar */
-::-webkit-scrollbar-track {
+.progress-box {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 5px;
   background: inherit;
 }
-/* clicking on scrollbar*/
-::-webkit-scrollbar-thumb {
-  background: #0c827f;
-}
-/*hover on scrollbar */
-::-webkit-scrollbar-thumb:hover {
-  background: #14ceca;
+
+.progress_bar {
+  height: 5px;
+  background-color: #0c827f!important;
+  width: 0%;
 }
 
-
-/*snowing down*/
 #scroll-up{
   display: none;
   position: fixed;
@@ -276,6 +271,27 @@ footer{
 #scroll-up:hover{
   opacity: .8;
 }
+
+/* make a scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/*
+// track scrollbar
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+// clicking on scrollbar
+::-webkit-scrollbar-thumb {
+  background: #0c827f;
+}
+// hover on scrollbar
+::-webkit-scrollbar-thumb:hover {
+  background: #14ceca;
+}
+*/
+/*snowing down*/
 /*
 stars move
 .star{

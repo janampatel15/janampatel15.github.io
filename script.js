@@ -23,13 +23,16 @@ $('.navbar-collapse a').click(function(){
 
 //reach the skies
 var sky = document.getElementById("scroll-up");
-
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+window.onscroll = function() {scrollFunction(), top_progress_bar()};
+function scrollFunction()
+{
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+  {
     sky.style.display = "block";
-  } else {
+  }
+  else
+  {
     sky.style.display = "none";
   }
 }
@@ -38,6 +41,16 @@ function topfunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+//Page Progress Bar
+function top_progress_bar() {
+  var Scroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (Scroll / height) * 100;
+  document.getElementById("progress_bar").style.width = scrolled + "%";
+}
+
+
 // stars animation down
 // function createStars(type, Quantity){
 //   for (let i=0; i<Quantity+Quantity; i++){
