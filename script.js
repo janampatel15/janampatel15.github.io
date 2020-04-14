@@ -5,11 +5,11 @@ document.getElementById("open").click();
 function OpenWork(evt, Comp_name) {
   var i, description, work;
   description = document.getElementsByClassName("description");
-  for (i = 0; i < description.length; i++) {
+  for (i = 0; i <description.length; i++) {
     description[i].style.display = "none";
   }
   work = document.getElementsByClassName("work");
-  for (i = 0; i < work.length; i++) {
+  for (i = 0; i <work.length; i++) {
     work[i].className = work[i].className.replace("active", "");
   }
   document.getElementById(Comp_name).style.display = "block";
@@ -49,22 +49,3 @@ function top_progress_bar() {
   var scrolled = (Scroll / height) * 100;
   document.getElementById("progress_bar").style.width = scrolled + "%";
 }
-
-
-// stars animation down
-// function createStars(type, Quantity){
-//   for (let i=0; i<Quantity+Quantity; i++){
-//     var star=document.createElement('div');
-//     star.classList.add('star',`type-${type}`);
-//     star.style.left=`${randomNumber(1,99)}%`;
-//     star.style.bottom=`${randomNumber(1,100)}%`;
-//     star.style.animationDuration=`${randomNumber(10,11)}s`;
-//     document.body.appendChild(star);
-//   }
-// }
-// function randomNumber(min,max){
-//   return Math.floor(Math.random()*max)+min;
-// }
-// createStars(1,100);
-// createStars(2,85);
-// createStars(3,70);

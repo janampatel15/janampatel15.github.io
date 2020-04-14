@@ -7,18 +7,18 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush%7CMontserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Navbar -->
     <nav id="navbar" class = "navbar sticky-top navbar-expand-lg navbar-dark">
       <div class="container">
     <a class="navbar-brand" href="#">
-      <h1 id="logo">J</h1>
+      <h3 id="logo">J</h3>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link bookmark" href="#">Home</a>
+          <a class="nav-link bookmark" href="#intro">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link bookmark" href="#about_me">About Me</a>
@@ -39,7 +39,7 @@
           <a class="nav-link bookmark" href="#contact">Contact</a>
         </li>
         <li class="nav-item box">
-          <a class="btn btn-outline-primary my-2 my-sm-0" href="Janam P. Resume.pdf" target="_blank">Resume</a>
+          <a class="btn btn-outline-primary my-2 my-sm-0" href="Janam_P_Resume.pdf" target="_blank">Resume</a>
         </li>
       </ul>
     </div>
@@ -54,11 +54,11 @@
   <!-- Header -->
   <header>
     <div data-aos="fade-up"  class="container">
-      <div id="intro"class="row justify-content-around align-items-center text-center introduction">
+      <div id="intro" class="row justify-content-around align-items-center text-center introduction">
         <div class="col-12">
           <h4>Hi, my name is</h4>
           <h1>Janam Patel</h1>
-          <h4>I'm a Computer Science Student who's passion is Software Engineering.</h4>
+          <h4>I'm a Computer Science Student who's passion is Software Engineering and Web Development.</h4>
           <a class="btn btn-primary btn-lg" href = "#contact">Get In Touch</a>
         </div>
       </div>
@@ -79,7 +79,7 @@
           <p>I'm Software Engineer student based in New York, NY who enjoys creating things that live on internet. I'm obessed with creating and fixing things that aren't broken. After I gradute from the <a class = "link" href="https://www.york.cuny.edu" target="_blank">CUNY, York College</a> in May 2020, I am excited to begin my career in the tech world while improving on my coding skills in C++ and Python.</p>
           <p>Currently I'm the Operational Lead at <a class = "link" href="https://www.kohls.com" target="_blank">Kohl's Deparment Store</a> and held the role of Sales and Data Operations Intern at <a class = "link" href="https://www.wayup.com" target="_blank">WayUp</a> where I cleaned up the entire Salesforce and updated all accounts. With interest in Software Engineering and Data Management, I look forward to putting my education and aqcuired skills to use.</p>
           <p>Here's a list of few technologies I've been working with recently:</p>
-          <ul class="tech" type="disc" color="white">
+          <ul class="tech">
             <li>C++ </li>
             <li> HTML, CSS & Javascript</li>
             <li> Salesforce </li>
@@ -106,7 +106,8 @@
 <div id= "experience" data-aos="fade-right" class="section">
   <div id="here_1"  class= "container exps">
     <div class = "col-sm-6"></div>
-      <h1>Professional Background<hr class="gradient"></h1>
+      <h1>Professional Background</h1>
+      <hr class="gradient">
         <div class="exp">
           <div class="align-items-center">
             <button class="work" onclick="OpenWork(event, 'Kohls')" id="open">Kohl's</button>
@@ -137,7 +138,7 @@
           </ul>
         </div>
 
-        <div id="US Open" class="description">
+        <div id="US_Open" class="description">
           <h3>Store Assocaite @ <a class = "link" href="https://www.usopen.org/index.html" target="_blank">US Open Tennis</a></h3>
           <p><i>August 2017 - September 2017</i></p>
           <ul>
@@ -156,17 +157,18 @@
     <div class= "row justify-content-around align-items-center">
       <!-- Column 1 -->
       <div class = "col-12 col-lg-10 col-md-8">
-        <h1>Get In Touch!<hr class="gradient"></h1>
+        <h1>Get In Touch!</h1>
+        <hr class="gradient">
         <p>My anticipated graduation is May 2020 so I'm actviely looking for new opportunities. Whether for a potential internship, full-time positon, or just to say hi. I'll try my best to answer your email.</p>
       </div>
 
     <!--Column 2  -->
     <div class = "col-12 col-lg-10 col-md-8 middle">
       <a  class="social" href="https://bit.ly/2JvK8Tm" target="_blank">
-        <i class="fab fa-linkedin"></i>
+        <i id="linkedin" class="fab fa-linkedin"></i>
       </a>
       <a class="social" href="https://bit.ly/2oE2pqJ" target="_blank">
-        <i id="Email"class="far fa-envelope-open"></i>
+        <i id="email" class="far fa-envelope-open"></i>
       </a>
       <a class="social" href="https://bit.ly/31j9biz" target="_blank">
         <i id="instagram" class="fab fa-instagram"></i>
@@ -175,7 +177,6 @@
     </div>
   </div>
 </div>
-      <!-- </div> -->
 
 <!--reach the skies -->
 <div id="scroll-up" onclick="topfunction()">
