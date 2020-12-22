@@ -1,274 +1,349 @@
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
+    min-width: 576px;
 }
-body{
-  margin: auto;
-  padding: 3px;
-  min-width: 300px;
-  background: radial-gradient(ellipse at bottom, #013155 20%, #01162E 100%);
-  overflow-x: hidden;
+
+body {
+    margin: auto;
+    padding: 3px;
+    min-width: 600px;
+    background: radial-gradient(ellipse at bottom, #013155 20%, #01162E 100%);
+    overflow-x: hidden;
 }
+
 
 /* Font */
-p, header, label, li{
-  font-family: 'Montserrat', sans-serif;
-  color: #14ceca;
+
+p,
+header,
+label,
+li {
+    font-family: 'Montserrat', sans-serif;
+    color: #14ceca;
 }
 
-#logo{
-  font-family: 'Alex Brush', cursive;
-  color: white;
-  font-size: 2em;
+#logo {
+    font-family: 'Alex Brush', cursive;
+    color: white;
+    font-size: 2em;
 }
+
 
 /* navbar, footer */
-nav,footer{
-  background-color: #01162d !important;
+
+nav,
+footer {
+    background-color: #01162d !important;
 }
 
-
-.section{
-  color: #e6f1ff;
+.section {
+    color: #e6f1ff;
 }
+
 
 /* all links */
-.link{
-  color: #FF5D73
+
+.link {
+    color: #FF5D73
 }
 
+
 /* all links */
-.link:hover{
-  color: rgba(255, 99, 72, 0.65);
+
+.link:hover {
+    color: rgba(255, 99, 72, 0.65);
 }
+
 
 /* Resume Box */
-.box{
-  padding: 2px;
+
+.box {
+    padding: 2px;
 }
 
-.Button{
-  height: 50px;
-  width: 150px;
-  border-radius: 5%;
+.Button {
+    height: 50px;
+    width: 150px;
+    border-radius: 5%;
 }
 
-
-@media(min-width: 768px){
-  .first-section img{
-    margin-bottom: 20px;
-  }
+@media(min-width: 768px) {
+    .first-section img {
+        margin-bottom: 20px;
+    }
 }
 
-@media(min-width: 992px){
-  .first-section img{
-    margin-bottom: 10px;
-  }
+@media(min-width: 992px) {
+    .first-section img {
+        margin-bottom: 10px;
+    }
 }
 
-.img-fluid{
-  width: 500px;
-  height: 400px;
-  padding: 5px;
-  align-items: center;
+.img-fluid {
+    width: 500px;
+    height: 400px;
+    padding: 5px;
+    align-items: center;
 }
 
-#col2{
-  max-height: 800px;
+#col2 {
+    max-height: 800px;
 }
 
-.img-fluid:hover{
-  opacity: .7;
+.img-fluid:hover {
+    opacity: .7;
 }
 
-@media(min-width: 100px){
-  .section:not(#contact) {
+@media(min-width: 100px) {
+    .section:not(#contact) {
+        padding: 100px 0;
+    }
+}
+
+#intro,
+#about_me,
+#experience,
+#work {
+    min-height: 100vh;
     padding: 100px 0;
-  }
+    margin: auto;
+    align-items: center;
 }
 
-#intro, #about_me,#experience{
-  min-height: 100vh;
-  padding: 100px 0;
-  margin: auto;
-  align-items: center;
+.description>h3,
+li,
+p {
+    padding: 3px;
 }
 
-.description>h3,li,p{
-  padding: 3px;
-}
-.my-contacts{
-  min-height: 75vh;
-  padding-top: 100px;
-  margin: auto;
-  align-items: center;
+.my-contacts {
+    min-height: 75vh;
+    padding-top: 100px;
+    margin: auto;
+    align-items: center;
 }
 
-hr{
-  background-image: linear-gradient(to right,#fff,#fff);
-  height: 1px !important;
+hr {
+    background-image: linear-gradient(to right, #fff, #fff);
+    height: 1px !important;
 }
 
 
 /* Style the exp */
+
 .exp {
-  overflow: hidden;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: #14ceca;
-}
-.work{
-  color: #007bff;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #1a497b;
 }
 
+.work {
+    color: #007bff;
+}
+
+
 /* Style the buttons inside the exp */
+
 .exp button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 20px;
-  transition: 0.3s;
-  font-size: 17px;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: 0.3s;
+    font-size: 17px;
 }
 
 
 /* Change background color of buttons on hover */
+
 .exp button:hover {
-  background-color: #013155;
-  text-decoration: underline;
+    background-color: #013155;
+    text-decoration: underline;
 }
 
 .exp button.active {
-  background-color: #013155 !important;
+    background-color: #013155 !important;
 }
+
 
 /* Style the exp content */
+
 .description {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid black;
-  border-top: none;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid black;
+    border-top: none;
 }
 
-
-.description>p{
-  padding: 1px;
-  font-weight: bold;
+.description>p {
+    padding: 1px;
+    font-weight: bold;
 }
-.description>ul>li{
-  padding: 3px;
+
+.description>ul>li {
+    padding: 3px;
 }
 
 
 /* SOCIAL MEDIA */
-.middle{
-  margin: 30px;
-  padding: 30px;
-  position: absolute;
-  width: 100%;
-  text-align: center;
+
+.middle {
+    margin: 30px;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
 }
 
-.social{
-  display: inline-block;
-  width: 250px;
-  height: 90px;
-  background:rgba(103, 116, 142, 0.88);
-  margin: 10px;
-  border-radius: 5%;
-  box-shadow: 0 5px 15px -5px black;
-  color: #fff;
-  cursor: pointer;
-  font-family:"Montserrat",sans-serif;
-  overflow: hidden;
-  position: relative;
-}
-.social i{
-  line-height: 90px;
-  font-size: 30px;
-  transition: 0.2s linear;
-}
-.social:hover i{
-  transform: scale(2.0);
-  color: #f1f1f1;
+.social {
+    display: inline-block;
+    width: 250px;
+    height: 90px;
+    background: rgba(103, 116, 142, 0.88);
+    margin: 10px;
+    border-radius: 5%;
+    box-shadow: 0 5px 15px -5px black;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+    position: relative;
 }
 
-.social::before{
-  content: "";
-  position: absolute;
-  width: 140%;
-  height: 120%;
-  background: #007bff;
-  transform: rotate(45deg);
-  right: -120%;
-  bottom: 90%;
+.social i {
+    line-height: 90px;
+    font-size: 30px;
+    transition: 0.2s linear;
 }
-.social:hover::before{
-  animation: animate 0.7s 1;
-  bottom: -10%;
-  right: -20%;
+
+.social:hover i {
+    transform: scale(2.0);
+    color: #f1f1f1;
+}
+
+.social::before {
+    content: "";
+    position: absolute;
+    width: 140%;
+    height: 120%;
+    background: #007bff;
+    transform: rotate(45deg);
+    right: -120%;
+    bottom: 90%;
+}
+
+.social:hover::before {
+    animation: animate 0.7s 1;
+    bottom: -10%;
+    right: -20%;
 }
 
 @keyframes animate {
-  0%{
-    right: -110%;
-    bottom: 50%;
-  }50%{
-    right: 10%;
-    bottom:-90%;
-  }100%{
-    bottom: -10%;
-    right: -20%;
-  }
+    0% {
+        right: -110%;
+        bottom: 50%;
+    }
+    50% {
+        right: 10%;
+        bottom: -90%;
+    }
+    100% {
+        bottom: -10%;
+        right: -20%;
+    }
 }
 
-.widgets{
-  padding: 10px;
-  margin: 10px;
+.widgets {
+    padding: 10px;
+    margin: 10px;
 }
 
-footer{
-  color: #ffffffbf;
-  padding: 5px;
-  font-size: 12px;
-  font-weight: bold;
+footer {
+    color: #ffffffbf;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-.bookmark:link:hover{
-  text-decoration:underline;
-  font-size: 20px;
+.bookmark:link:hover {
+    text-decoration: underline;
+    font-size: 20px;
 }
 
 .progress-box {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-  height: 5px;
-  background: inherit;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 5px;
+    background: inherit;
 }
 
 .progress_bar {
-  height: 5px;
-  background-color: #0c827f!important;
-  width: 0%;
+    height: 5px;
+    background-color: #0c827f!important;
+    width: 0%;
 }
 
-#scroll-up{
-  display: none;
-  position: fixed;
-  bottom: 50px;
-  right: 25px;
-  z-index: 99;
-  color: #007bff;
-  font-size: 17px;
+#scroll-up {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    z-index: 99;
+    color: #007bff;
+    font-size: 17px;
 }
-#scroll-up:hover{
-  opacity: .8;
+
+#scroll-up:hover {
+    opacity: .8;
 }
+
 
 /* make a scrollbar */
+
 ::-webkit-scrollbar {
-  width: 0px;
+    width: 0px;
+}
+
+
+/* projects */
+
+.card {
+    background: #1a497b !important;
+    padding: 10px;
+}
+
+.git {
+    padding: 30px;
+}
+
+
+/* grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
 }
