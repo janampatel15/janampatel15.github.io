@@ -6,7 +6,7 @@ html {
 body {
     margin: auto;
     padding: 3px;
-    min-width: 600px;
+    min-width: 300px;
     background: radial-gradient(ellipse at bottom, #013155 20%, #01162E 100%);
     overflow-x: hidden;
 }
