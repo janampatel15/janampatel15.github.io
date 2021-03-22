@@ -200,7 +200,7 @@ hr {
 
 .social {
     display: inline-block;
-    width: 250px;
+    width: 290px;
     height: 90px;
     background: rgba(103, 116, 142, 0.88);
     margin: 10px;
@@ -229,7 +229,7 @@ hr {
     position: absolute;
     width: 140%;
     height: 120%;
-    background: #007bff;
+    background: #007bff94;
     transform: rotate(45deg);
     right: -120%;
     bottom: 90%;
@@ -294,7 +294,7 @@ footer {
     bottom: 50px;
     right: 25px;
     z-index: 99;
-    color: #007bff;
+    color: #007bffb4;
     font-size: 17px;
 }
 
@@ -342,7 +342,7 @@ footer {
 @media (min-width: 992px) {
     .grid {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         grid-column-gap: 30px;
         grid-row-gap: 30px;
     }
