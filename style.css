@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 html {
     scroll-behavior: smooth;
     min-width: 425px;
@@ -7,6 +14,7 @@ body {
     margin: auto;
     padding: 3px;
     min-width: 300px;
+    background: -o-radial-gradient(bottom, ellipse, #013155 20%, #01162E 100%);
     background: radial-gradient(ellipse at bottom, #013155 20%, #01162E 100%);
     overflow-x: hidden;
 }
@@ -80,14 +88,16 @@ footer {
 }
 
 .img-fluid {
-    width: 500px;
-    height: 400px;
+    width: 300px;
+    height: 450px;
     padding: 5px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 #col2 {
-    max-height: 800px;
+    max-height: 600px;
 }
 
 .img-fluid:hover {
@@ -107,6 +117,8 @@ footer {
     min-height: 100vh;
     padding: 100px 0;
     margin: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -120,12 +132,20 @@ p {
     min-height: 75vh;
     padding-top: 100px;
     margin: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 hr {
+    background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
+    background-image: -o-linear-gradient(left, #fff, #fff);
     background-image: linear-gradient(to right, #fff, #fff);
     height: 1px !important;
+}
+
+.text_even {
+    text-align: justify;
 }
 
 
@@ -152,6 +172,8 @@ hr {
     outline: none;
     cursor: pointer;
     padding: 14px 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     font-size: 17px;
 }
@@ -205,6 +227,7 @@ hr {
     background: rgba(103, 116, 142, 0.88);
     margin: 10px;
     border-radius: 5%;
+    -webkit-box-shadow: 0 5px 15px -5px black;
     box-shadow: 0 5px 15px -5px black;
     color: #fff;
     cursor: pointer;
@@ -216,10 +239,14 @@ hr {
 .social i {
     line-height: 90px;
     font-size: 30px;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
 }
 
 .social:hover i {
+    -webkit-transform: scale(2.0);
+    -ms-transform: scale(2.0);
     transform: scale(2.0);
     color: #f1f1f1;
 }
@@ -230,15 +257,33 @@ hr {
     width: 140%;
     height: 120%;
     background: #007bff94;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     right: -120%;
     bottom: 90%;
 }
 
 .social:hover::before {
+    -webkit-animation: animate 0.7s 1;
     animation: animate 0.7s 1;
     bottom: -10%;
     right: -20%;
+}
+
+@-webkit-keyframes animate {
+    0% {
+        right: -110%;
+        bottom: 50%;
+    }
+    50% {
+        right: 10%;
+        bottom: -90%;
+    }
+    100% {
+        bottom: -10%;
+        right: -20%;
+    }
 }
 
 @keyframes animate {
@@ -325,41 +370,53 @@ footer {
 /* grid */
 
 .grid {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto;
     grid-template-columns: auto;
     grid-row-gap: 30px;
 }
 
 .grid2 {
     padding: 5px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto;
     grid-template-columns: auto;
 }
 
 @media (min-width: 768px) {
     .grid {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: auto 30px auto;
         grid-template-columns: auto auto;
         grid-column-gap: 30px;
         grid-row-gap: 30px;
     }
     .grid2 {
         padding: 5px;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     }
 }
 
 @media (min-width: 992px) {
     .grid {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: auto 30px auto;
         grid-template-columns: auto auto;
         grid-column-gap: 30px;
         grid-row-gap: 30px;
     }
     .grid2 {
         padding: 5px;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     }
 }
